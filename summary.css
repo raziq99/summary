@@ -20,15 +20,19 @@ body {
 }
 
 .kanan {
-  display: flex;
-  flex-direction: column;
   text-decoration: none;
   padding: 25px;
   border: solid white;
-  box-shadow: 5px 5px 1px 1px rgb(166, 164, 164);
-  border-radius: 10%;
+  box-shadow: 3px 1px 15px 9px hsl(234, 85%, 45%, 0.1);
+  border-radius: 1rem;
 }
 
+.scored {
+  text-align: center;
+}
+.scored p {
+  color: rgb(187, 178, 178);
+}
 .kiri {
   display: flex;
   flex-direction: column;
@@ -40,9 +44,9 @@ body {
   color: white;
   justify-content: center;
   padding: 40px;
-  padding-top: 10px;
+
   align-items: center;
-  border-radius: 10%;
+  border-radius: 2rem;
 }
 
 .kiri h1 {
@@ -51,18 +55,23 @@ body {
 }
 
 .lingkaran {
-  height: 155px;
-  width: 155px;
+  height: 200px;
+  width: 200px;
   background: linear-gradient(
     to bottom,
     hsl(241, 81%, 54%),
     hsla(256, 72%, 46%, 0.8)
   );
   border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .lingkaran h2 {
-  padding-left: 45px;
+  text-align: center;
+  line-height: 1;
 }
 
 .a76 {
@@ -77,6 +86,15 @@ body {
 .result {
   padding: 20px;
   color: rgb(187, 178, 178);
+}
+
+.kanan h2 {
+  margin: 0px;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
 }
 
 li {
@@ -95,7 +113,7 @@ li {
   padding-bottom: 5px;
   padding-left: 20px;
   padding-right: 30px;
-  border-radius: 10%;
+  border-radius: 1rem;
   background-color: hsla(0, 100%, 67%, 0.1);
 }
 
@@ -115,7 +133,7 @@ li {
   padding-bottom: 5px;
   padding-left: 20px;
   padding-right: 30px;
-  border-radius: 10%;
+  border-radius: 1rem;
 }
 
 .m1 {
@@ -135,7 +153,7 @@ li {
   padding-bottom: 5px;
   padding-left: 20px;
   padding-right: 30px;
-  border-radius: 10%;
+  border-radius: 1rem;
 }
 
 .p1 {
@@ -155,7 +173,7 @@ li {
   padding-bottom: 5px;
   padding-left: 20px;
   padding-right: 30px;
-  border-radius: 10%;
+  border-radius: 1rem;
 }
 
 .v1 {
@@ -166,17 +184,30 @@ li {
   color: hsl(224, 30%, 27%);
 }
 
-.continue {
+.conti {
   color: white;
   background: linear-gradient(
     to bottom,
-    hsl(241, 81%, 54%),
-    hsla(256, 72%, 46%, 0.8)
+    hsla(256, 72%, 46%, 0.8),
+    hsl(241, 81%, 54%)
   );
   text-align: center;
   padding: 15px;
   padding-left: 25px;
   padding-right: 25px;
-  border-radius: 20%;
-  margin: 30px;
+  border-radius: 3rem;
+  margin-block: 30px;
+  display: block;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+.sp {
+  color: gray;
+}
+
+.logo {
+  display: flex;
+  gap: 0.9rem;
 }
