@@ -29,6 +29,7 @@ body {
 
 .scored {
   text-align: center;
+  color: rgb(187, 178, 178);
 }
 .scored p {
   color: rgb(187, 178, 178);
@@ -186,11 +187,7 @@ li {
 
 .conti {
   color: white;
-  background: linear-gradient(
-    to bottom,
-    hsla(256, 72%, 46%, 0.8),
-    hsl(241, 81%, 54%)
-  );
+  background: hsl(224, 30%, 27%);
   text-align: center;
   padding: 15px;
   padding-left: 25px;
@@ -203,6 +200,14 @@ li {
   cursor: pointer;
 }
 
+.conti:hover {
+  background: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 0.8),
+    hsl(241, 81%, 54%)
+  );
+}
+
 .sp {
   color: gray;
 }
@@ -210,4 +215,48 @@ li {
 .logo {
   display: flex;
   gap: 0.9rem;
+}
+
+@media (max-width: 376px) {
+  .tampilan {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .scored {
+    font-size: 19px;
+    padding-inline: 18px;
+  }
+
+  .reaction {
+    gap: 6rem;
+  }
+
+  .memory {
+    gap: 6rem;
+  }
+
+  .verbal {
+    gap: 7rem;
+  }
+
+  .visual {
+    gap: 7rem;
+  }
+
+  .logo {
+    gap: 0rem;
+  }
+  .kiri {
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    padding-block: 0px;
+  }
+
+  .lingkaran {
+    height: 150px;
+    width: 150px;
+  }
 }
